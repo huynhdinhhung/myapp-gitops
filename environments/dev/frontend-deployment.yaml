@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: myapp-frontend
-          image: myapp-frontend:compose
-          imagePullPolicy: IfNotPresent
+          image: ghcr.io/huynhdinhhung/myapp-frontend:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
