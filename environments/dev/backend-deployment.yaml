@@ -15,8 +15,8 @@ spec:
     spec:
       containers:
         - name: myapp-backend
-          image: myapp-backend:compose
-          imagePullPolicy: IfNotPresent
+          image: ghcr.io/huynhdinhhung/myapp-backend:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 4000
           env:
