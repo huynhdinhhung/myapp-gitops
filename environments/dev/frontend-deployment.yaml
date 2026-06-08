@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-frontend
+  namespace: myapp-dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myapp-frontend
+  template:
+    metadata:
+      labels:
+        app: myapp-frontend
+    spec:
+      containers:
+        - name: myapp-frontend
+          image: myapp-frontend:compose
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
