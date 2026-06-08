@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: myapp-backend
-          image: ghcr.io/huynhdinhhung/myapp-backend:0dbf83b
+          image: ghcr.io/huynhdinhhung/myapp-backend:90b5b02
           imagePullPolicy: Always
           ports:
             - containerPort: 4000
